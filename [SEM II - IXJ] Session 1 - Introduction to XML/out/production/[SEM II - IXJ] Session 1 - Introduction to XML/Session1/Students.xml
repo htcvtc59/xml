@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Students[
+        <!ELEMENT Students (Student)*>
+        <!ELEMENT Student (Name, Age, Address)>
+        <!ELEMENT  Name (#PCDATA)>
+        <!ELEMENT  Age (#PCDATA)>
+        <!ELEMENT  Address (#PCDATA)>
+        <!ATTLIST Student isActive CDATA "True">
+        <!ENTITY hn "Ha Noi,Viet Nam">
+        ]>
+
+
+<Students>
+    <Student isActive="True">
+        <Name>Mr.A</Name>
+        <Age>12</Age>
+        <Address>&hn;</Address>
+    </Student>
+    <Student isActive="True">
+        <Name>Mr.B</Name>
+        <Age>13</Age>
+        <Address>&hn;</Address>
+    </Student>
+</Students>

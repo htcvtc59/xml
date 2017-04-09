@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="Students.xsl" ?>
+<std:Students xmlns:std="http://xml.net/schema/Students">
+    <!--gender="Female"-->
+    <std:Student isActive="True">
+        <std:Name>Mr.A</std:Name>
+        <std:Age>15</std:Age>
+        <std:Address>HN</std:Address>
+    </std:Student>
+    <!--gender="Male"-->
+    <std:Student isActive="False">
+        <std:Name>Mr.B</std:Name>
+        <std:Age>16</std:Age>
+        <std:Address>HN</std:Address>
+    </std:Student>
+</std:Students>

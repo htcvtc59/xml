@@ -1,0 +1,21 @@
+Book {
+    display: block;
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+Title, Author {
+    font-weight: bold;
+    color: green;
+
+}
+
+* {
+    background-color: cadetblue;
+
+}
+
+#vn {
+    font-size: x-large;
+    color: lightcoral;
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+        <!ELEMENT Students (Student)*>
+        <!ELEMENT Student (Name,Age,Address)>
+        <!ELEMENT Name (#PCDATA)>
+        <!ELEMENT Age (#PCDATA)>
+        <!ELEMENT Address (#PCDATA)>
+        <!ATTLIST Student isActive (True|False) "True">
+        <!ENTITY vn SYSTEM "address.txt">

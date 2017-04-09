@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="Books.xsl"?>
+<Books>
+    <Book>
+        <Title>Book1</Title>
+        <Author>Mr.A</Author>
+        <Publisher>Pub1</Publisher>
+        <Price>20</Price>
+    </Book>
+    <Book>
+        <Title>Book2</Title>
+        <Author>Mr.B</Author>
+        <Publisher>Pub2</Publisher>
+        <Price>30</Price>
+    </Book>
+    <Book>
+        <Title>Book3</Title>
+        <Author>Mr.C</Author>
+        <Publisher>Pub3</Publisher>
+        <Price id="vn">10</Price>
+    </Book>
+
+</Books>

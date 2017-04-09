@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function func() {
+            var xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+            xmlDoc.async = false;
+            xmlDoc.load("Students.xml");
+            if (xmlDoc.parseError.errorCode != 0) {
+                alert(xmlDoc.parseError.line);
+            } else {
+                alert(xmlDoc.xml);
+                var NodeList = xmlDoc.getElementsByTagName("std:Student"); //*
+                for (i = 0; i < NodeList.length; i++) {
+                    document.write(NodeList(i).tagName + "<br/>");
+                }
+                var firstStd = NodeList[0];
+                var NameNodeMap = firstStd.attributes;
+                for (i = 0; i < NameNodeMap.length; i++) {
+                    document.writeln(NameNodeMap(i).name + ":" + NameNodeMap(i).value);
+
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+<script type="text/javascript">
+    func();
+</script>
+</body>
+</html>

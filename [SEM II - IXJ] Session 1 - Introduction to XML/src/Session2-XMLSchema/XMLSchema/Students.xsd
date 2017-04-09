@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://xml.net/schema/Students"
+            xmlns:tns="http://xml.net/schema/Students"
+            elementFormDefault="qualified">
+
+    <xsd:element name="Students">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="tns:Student" minOccurs="1" maxOccurs="unbounded"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="Student">
+        <!--mixed="true" vua chua text vua chua the-->
+        <xsd:complexType mixed="true">
+            <xsd:sequence>
+                <xsd:element name="Name" type="xsd:string"></xsd:element>
+                <xsd:element name="Age" type="xsd:integer"></xsd:element>
+                <xsd:element name="Address">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:length value="2"></xsd:length>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+
+                </xsd:element>
+            </xsd:sequence>
+            <xsd:attribute name="isActive" default="True" type="xsd:string"></xsd:attribute>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

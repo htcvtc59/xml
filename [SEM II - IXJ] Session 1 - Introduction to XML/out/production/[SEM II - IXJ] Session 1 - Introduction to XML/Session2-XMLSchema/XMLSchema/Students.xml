@@ -1,0 +1,8 @@
+<stud:Students xmlns:stud="http://xml.net/schema/Students">
+    <!--1 or more repetitions:-->
+    <stud:Student isActive="True">
+        <stud:Name>Mr.A</stud:Name>
+        <stud:Age>12</stud:Age>
+        <stud:Address>st</stud:Address>
+    </stud:Student>
+</stud:Students>
